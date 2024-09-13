@@ -36,7 +36,6 @@ function App() {
       <div className='box'>
         <div className="interest-box">
           <h2>&#8377; {currInterest}</h2>
-          <p>Interest</p>
         </div>
         <div className="inputs">
           <input ref={amount} type="number" placeholder='Principle amount'/>
