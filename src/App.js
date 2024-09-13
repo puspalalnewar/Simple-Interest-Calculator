@@ -21,7 +21,12 @@ function App() {
     setCurrentInterest(interest);
   }
 
-  
+  const reset = ()=>{
+    amount.current.value = "";
+    rate.current.value = "";
+    time.current.value = "";
+    setCurrentInterest(0);
+  }
 
 
 
@@ -31,6 +36,7 @@ function App() {
       <div className='box'>
         <div className="interest-box">
           <h2>&#8377; {currInterest}</h2>
+          <p>Interest</p>
         </div>
         <div className="inputs">
           <input ref={amount} type="number" placeholder='Principle amount'/>
@@ -39,7 +45,7 @@ function App() {
         </div>
         <div className="buttons">
           <button onClick={()=> calculate()} className='calc'>Calculate</button>
-          <button className='reset'>Reset</button>
+          <button onClick={reset} className='reset'>Reset</button>
         </div>
       </div>
 
