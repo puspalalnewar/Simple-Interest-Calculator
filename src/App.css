@@ -1,27 +1,59 @@
-.container{
-    width: 50vw;
+.container {
     height: 75vh;
     background-color: #fff;
     margin-top: 5rem;
     padding: 1rem;
     /* text-align: center; */
 }
-.container h3{
-    
-    
-}
-.box{
+
+.container h3 {}
+
+.box {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
-.interest-box{
+
+.interest-box {
     /* text-align: center;
      */
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 6rem;
     width: 90%;
     background-color: rgb(233, 233, 12);
+}
+
+.inputs {
+    text-align: center;
+}
+
+.inputs input {
+    width: 90%;
+    height: 4rem;
+    border: 1px solid black;
+    outline: none;
+    font-size: medium;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.calc{
+    height: 3.5rem;
+    width: 6rem;
+    font-size: medium;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.reset{
+    height: 3.5rem;
+    width: 6rem;
+    font-size: medium;
+    padding: 1rem;
 }
